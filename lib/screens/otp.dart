@@ -1,11 +1,13 @@
 import 'dart:async';
 import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
-import 'package:sifabso_driver_app/response/verify_driver_login.dart';
-import 'package:sifabso_driver_app/utils/shared_pref.dart';
+import 'package:turns_fleet/response/verify_driver_login.dart';
+import 'package:turns_fleet/utils/shared_pref.dart';
 
 import '../navigation/navigation.dart';
 import '../response/driver_login_response.dart';
@@ -150,12 +152,11 @@ class _OtpPageState extends State<OtpPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const Text(
+                Text(
                   "Enter OTP Here",
-                  style: TextStyle(
+                  style: GoogleFonts.lato(
                     color: Colors.black,
                     fontSize: 18.0,
-                    overflow: TextOverflow.ellipsis,
                     fontWeight: FontWeight.w800,
                   ),
                 ),
@@ -167,7 +168,7 @@ class _OtpPageState extends State<OtpPage> {
                       width: MediaQuery.of(context).size.width - 200,
                       fieldWidth: 40.0,
                       fieldStyle: FieldStyle.box,
-                      style: const TextStyle(fontSize: 18.0),
+                      style: GoogleFonts.lato(fontSize: 18.0),
                       onChanged: (value) => {
                         if (value.length == 4)
                           {
@@ -204,7 +205,7 @@ class _OtpPageState extends State<OtpPage> {
                       )
                     : RichText(
                         text: TextSpan(
-                            style: const TextStyle(
+                            style: GoogleFonts.lato(
                               fontSize: 14.0,
                               color: Colors.black,
                             ),
@@ -214,7 +215,7 @@ class _OtpPageState extends State<OtpPage> {
                               ),
                               TextSpan(
                                   text: "$start ",
-                                  style: const TextStyle(
+                                  style: GoogleFonts.lato(
                                       fontWeight: FontWeight.bold)),
                               const TextSpan(text: "sec "),
                             ]),

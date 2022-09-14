@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
-import 'package:sifabso_driver_app/utils/shared_pref.dart';
+import 'package:turns_fleet/utils/shared_pref.dart';
+
 import '../navigation/navigation.dart';
 
 class StoreLoginPage extends StatefulWidget {
@@ -77,13 +79,12 @@ class _StoreLoginPage extends State<StoreLoginPage> {
                     ),
                   ),
                 ),
-                const Text(
+                Text(
                   "Enter Your Store Id",
-                  style: TextStyle(
+                  style: GoogleFonts.lato(
                     color: Colors.black,
                     fontSize: 18.0,
                     fontWeight: FontWeight.w800,
-                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
                 Padding(
@@ -172,17 +173,17 @@ class _StoreLoginPage extends State<StoreLoginPage> {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children:  [
               Text(
                 "Powered By ",
-                style: TextStyle(
+                style: GoogleFonts.lato(
                   fontWeight: FontWeight.w400,
                   fontSize: 8,
                 ),
               ),
               Text(
-                "Sifabso",
-                style: TextStyle(
+                "Turns",
+                style: GoogleFonts.lato(
                   fontWeight: FontWeight.w700,
                   fontSize: 12,
                 ),

@@ -1,4 +1,4 @@
-package com.example.sifabso_driver_app
+package com.turnsapp.driver
 
 import io.flutter.embedding.android.FlutterActivity
 

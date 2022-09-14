@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sifabso_driver_app/utils/constant.dart';
-import 'package:sifabso_driver_app/utils/shared_pref.dart';
+import 'package:turns_fleet/utils/constant.dart';
+import 'package:turns_fleet/utils/shared_pref.dart';
 
 var _initialRoute = "store";
 
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Turns Fleet',
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),

@@ -1,9 +1,11 @@
 import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sifabso_driver_app/navigation/navigation.dart';
-import 'package:sifabso_driver_app/utils/shared_pref.dart';
+import 'package:turns_fleet/navigation/navigation.dart';
+import 'package:turns_fleet/utils/shared_pref.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class DriverWebView extends StatefulWidget {
@@ -50,7 +52,7 @@ class _DriverWebViewState extends State<DriverWebView> {
               if (snapshot.hasError) {
                 return Text(
                   '${snapshot.error}',
-                  style: const TextStyle(color: Colors.red),
+                  style: GoogleFonts.lato(color: Colors.red),
                 );
               } else {
                 return SafeArea(

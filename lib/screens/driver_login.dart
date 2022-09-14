@@ -1,8 +1,10 @@
 import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
-import 'package:sifabso_driver_app/response/driver_login_response.dart';
-import 'package:sifabso_driver_app/utils/shared_pref.dart';
+import 'package:turns_fleet/response/driver_login_response.dart';
+import 'package:turns_fleet/utils/shared_pref.dart';
 
 import '../navigation/navigation.dart';
 
@@ -96,12 +98,11 @@ class _DriverLoginPage extends State<DriverLoginPage> {
                     ),
                   ),
                 ),
-                const Text(
+                Text(
                   "Login with Email or Phone Number",
-                  style: TextStyle(
+                  style: GoogleFonts.lato(
                     color: Colors.black,
                     fontSize: 18.0,
-                    overflow: TextOverflow.ellipsis,
                     fontWeight: FontWeight.w800,
                   ),
                 ),
@@ -190,17 +191,17 @@ class _DriverLoginPage extends State<DriverLoginPage> {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
               Text(
                 "Powered By ",
-                style: TextStyle(
+                style: GoogleFonts.lato(
                   fontWeight: FontWeight.w400,
                   fontSize: 8,
                 ),
               ),
               Text(
-                "Sifabso",
-                style: TextStyle(
+                "Turns",
+                style: GoogleFonts.lato(
                   fontWeight: FontWeight.w700,
                   fontSize: 12,
                 ),
